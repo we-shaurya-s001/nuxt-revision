@@ -1,8 +1,10 @@
 <template>
-Hello - Hi - Shaurya
-
-    </template>
-    
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  <h2 class="bg-red-200"> sddsdsssssssssssssssssss</h2>
+</template>
+     
     <script setup>
 useHead({
   title: 'My Page Title',
