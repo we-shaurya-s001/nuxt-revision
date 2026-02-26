@@ -1,32 +1,27 @@
 <template>
+  <div class="flex flex-col min-h-screen">
     
-<div>
-<div>
-    <nav class="bg-grey-200">
-<ul class="flex flex-row space-between justify-between p-6">
-    <li>onee</li>
-    <li>onee</li> 
+    <header class="bg-slate-400">
+      <nav class="bg-grey-200">
+        <ul class="flex flex-row justify-between p-6">
+          <li class="font-bold">Personal Portfolio</li>
+          <div class="flex gap-4">
+             <NuxtLink to="/">Home</NuxtLink>
+    <NuxtLink to="/project">project</NuxtLink>
 
-    <li>onee</li>
-    <li>onee</li>
+            <li>Onee</li>
+          </div>
+        </ul>
+      </nav>
+    </header>
 
+    <main class="grow">
+      <slot /> 
+    </main>
 
-</ul>
-    </nav>
-</div>
-<slot />
+    <footer class="bg-slate-800 text-white p-6">
+      <h2>Footer added too</h2>
+    </footer>
 
-<footer>
-   <h2>Footer added too</h2>
-</footer>
-
-
-
-</div>
-
-
-
-</template>
-
-<script setup>
-</script>
+  </div>
+</template>             

@@ -1,10 +1,16 @@
 <template>
 project
+<div>
+    section1
+    <div>
+        section2
+        
+    </div>
+</div>
 
     </template>
-<script>
-definemetalayout({
-    layout : 'default',
-}
-)
+<script setup>
+definePageMeta({
+    layout: 'default'
+})
 </script>

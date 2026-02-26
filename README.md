@@ -11,16 +11,18 @@ Tailwind: Install the @nuxtjs/tailwindcss module.
 Config: In tailwind.config.js, add a custom primary color (e.g., brand: '#34d399').
 // See again
 Global CSS: Create an assets/css/main.css file, add a Google Font import, and ensure it's linked in nuxt.config.ts.
-sere again
+sere again  //done
 Phase 2: Structural Architecture (Chapter 4)
 Default Layout: Create a layouts/default.vue. It must contain:
 //done
 A Navigation bar with <NuxtLink> to "Home" and "Projects".
+//done
 
 A <slot /> for page content.
+//done
 
 A Footer that stays at the bottom.
-
+//done
 Custom Layout: Create a layouts/admin.vue. This should have a sidebar instead of a top nav.
 
 Phase 3: Routing & Pages (Chapters 2 & 3)

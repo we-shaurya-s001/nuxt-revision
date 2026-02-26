@@ -1,7 +1,12 @@
 <template>
-    <h1>
-        pages working fine
-    </h1>
+    <div class="p-12 flex flex-row ">
+        <img src="/images.jpg" class="w-100 h-100 z-30  "/>
+<div class="p-20">
+            Name
+        </div>
+        
+    </div>
+    
     </template>
 
     <script>
