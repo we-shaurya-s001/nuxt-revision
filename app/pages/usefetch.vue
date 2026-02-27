@@ -1,7 +1,3 @@
 <template>
-    <div>Fetching the data using the useAsyncData</div>
+    usefetch
     </template>
-
-    <script>
-
-</script>
