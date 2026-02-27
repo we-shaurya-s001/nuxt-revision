@@ -24,10 +24,11 @@ A <slot /> for page content.
 A Footer that stays at the bottom.
 //done
 Custom Layout: Create a layouts/admin.vue. This should have a sidebar instead of a top nav.
+//done
 
 Phase 3: Routing & Pages (Chapters 2 & 3)
 Home Page (pages/index.vue): * Add a Hero section using Tailwind classes.
-
+//doee
 Display an image stored in assets/ (processed by Vite).
 
 Project Listing (pages/projects/index.vue):

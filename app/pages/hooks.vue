@@ -8,7 +8,8 @@ const vivekcounter = ref(0);
  })  
 onUnmounted(()=>{
     console.log('component mounted')
- }) 
+ }),
+
 
  onUpdated(()=>{
     console.log('Updated mounted')
@@ -17,7 +18,6 @@ onUnmounted(()=>{
  const increaseCountvivek = () => {
     vivekcounter.value++
  }
-
 </script>
 
 <template>
