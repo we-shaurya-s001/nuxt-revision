@@ -15,7 +15,6 @@
     import Componentcard from '~/components/componentcard.vue';
     const { data: Images } = await useAsyncData('photos', async () => {
     
-        
 
     const rawData = await $fetch('https://jsonplaceholder.typicode.com/photos')
     
