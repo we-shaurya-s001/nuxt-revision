@@ -3,6 +3,7 @@
 The Challenge: "The Nuxt Dev Portfolio"
 Goal: Build a mini-portfolio that displays project categories and specific project details.
 //done
+phase 2: setup and define the configuration
 Phase 1: Setup & Configuration (Chapters 1 & 4)
 Initialize: Create a new Nuxt project using the CLI (nuxi).
 //done
@@ -23,6 +24,7 @@ A <slot /> for page content.
 
 A Footer that stays at the bottom.
 //done
+
 Custom Layout: Create a layouts/admin.vue. This should have a sidebar instead of a top nav.
 //done
 
