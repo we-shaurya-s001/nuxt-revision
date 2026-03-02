@@ -1,6 +1,4 @@
 <template>
-  <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
 <div class="bg-white">
   <header class="absolute inset-x-0 top-0 z-50">
     <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">

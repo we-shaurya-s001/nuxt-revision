@@ -2,7 +2,6 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
     <div v-for="project in myprojects" :key="project.id" class="w-60 h-60 border-2">
       {{ project.name }}
-      <h2>{{ project.description }}</h2>
      <NuxtLink 
       v-for="project in myprojects" 
       :key="project.id" 
