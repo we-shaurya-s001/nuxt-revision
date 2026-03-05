@@ -1,47 +1,23 @@
 <template>
-  <div class="container">
-    <h1>Vue 3 To-Do List</h1>
-
-    <input
-      v-model="newTodo"
-      @keyup.enter="addTodo"
-      type="text"
-      placeholder="Add a new todo"
-    />
-
-    <ul>
-      <li v-for="todo in todos" :key="todo.id">
-        <input type="checkbox" v-model="todo.completed" />
-
-        <span :class="{ completed: todo.completed }">
-          {{ todo.text }}
-        </span>
-
-        <button @click="removeTodo(todo.id)">Delete</button>
-      </li>
-    </ul>
+  <div>
+    <h1>Count: {{ count }}</h1>
+    <button @click="increment">Add 1</button>
+  
+    <div>
+      keeping the count
+    </div>
+    <div v-if="count > 10">
+      You reached the limit!
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const newTodo = ref('')
-const todos = ref([])
+const count = ref(0)
 
-function addTodo() {
-  if (newTodo.value.trim() === '') return
-
-  todos.value.push({
-    id: Date.now(),
-    text: newTodo.value.trim(),
-    completed: false
-  })
-
-  newTodo.value = ''
-}
-
-function removeTodo(id) {
-  todos.value = todos.value.filter(todo => todo.id !== id)
+function increment() {
+  count.value++;
 }
 </script>
