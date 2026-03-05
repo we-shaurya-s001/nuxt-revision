@@ -1,8 +1,7 @@
 <script setup>
-import { ref } from 'vue';
-const name = ref('shaurya')
+import Transactioncomp from './components/transactioncomp.vue';
 </script>
 <template>
- 
+ <Transactioncomp/>
  Swift spend project
 </template>
