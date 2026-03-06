@@ -21,13 +21,5 @@ const onFormSubmit = () => {
 };
 </script>
 <template>
-   <div v-for="tranValues in source">
-
-   </div>
 </template>
-<!-- 
 
-transactions,
-        addTransaction,
-        deleteTransaction,
-        totalBalance -->

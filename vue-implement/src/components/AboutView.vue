@@ -1,3 +1,6 @@
 <template>
-    About view <section></section>
+    About view section
+    <div>
+    view section
+    </div>
     </template>

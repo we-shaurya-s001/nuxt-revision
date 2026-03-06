@@ -8,13 +8,21 @@ export const useTransactionStore = defineStore('transaction', () => {
     transactions.value.push(newTransactions);
    }
 
-    const deleteTransaction = (id) => {
+   const deleteTransaction = (id) => {
             transactions.value = transactions.value.filter(t => t.id !== id);
         };
     const totalBalance = computed(() => {
         return transactions.value.reduce((acc, item) => acc + item.amount, 0);
     });
+    const balanceleft = computed(()=>{
+
+    })
+
+    const updateTransaction = computed(()=>{
+        transactions.value++;
+    })
    
+
     return {
         transactions,
         addTransaction,

@@ -16,7 +16,6 @@ const onFormSubmit = () => {
       name: newEntry.name,
       amount: newEntry.amount
     });
-    // Reset form
     newEntry.name = '';
     newEntry.amount = 0;
   }
