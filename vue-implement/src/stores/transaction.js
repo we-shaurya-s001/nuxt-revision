@@ -9,6 +9,8 @@ export const useTransactionStore = defineStore('transaction', () => {
     transactions.value.push(newTransactions);
    }
 
+
+
    const deleteTransaction = (id) => {
             transactions.value = transactions.value.filter(t => t.id !== id);
         };
