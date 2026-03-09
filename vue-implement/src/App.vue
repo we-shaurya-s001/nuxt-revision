@@ -8,8 +8,6 @@ import HomeView from './components/HomeView.vue';
     <Navbar/>
    <main>
     <RouterView /> </main>
-   <h1 class="text-3xl font-bold text-red-500">
-  Tailwind Working
-</h1>
- <Transactioncomp/>
+   
+
 </template>

@@ -26,34 +26,36 @@ const onFormSubmit = () => {
   <div> 
     <h2>SwiftSpend Dashboard</h2>
 
-    <h3>Total Balance: ${{ transactionStore.totalBalance }}</h3>
-
+    <h3 class="color-red">Total Balance: {{ transactionStore.totalBalance }}</h3>
     <hr />
+    <h1>121</h1>
+    <h3>dsddsds{{ transactionStore.counter}}</h3>
 
+  
     <ul>
       <li v-for="item in transactionStore.transactions" :key="item.id">
-        {{ item.name }} : <strong>${{ item.amount }}</strong>
+        {{ item.name  }} : <strong>${{ item.amount }}</strong>
         <button @click="transactionStore.deleteTransaction(item.id)">X</button>
       </li>
     </ul>
-
     <hr />
 
     <div class="add-transaction">
       <h3>Add New Transaction</h3>
       <form @submit.prevent="onFormSubmit">
-        <input 
+        <input class="border"
           v-model="newEntry.name" 
           type="text" 
           placeholder="What did you buy?" 
           required 
         />
         <input 
-          v-model.number="newEntry.amount" 
+        class="border"
+        v-model.number="newEntry.amount" 
           type="number" 
           placeholder="Amount" 
           required 
-        />
+          />
         <button type="submit">Add to List</button>
       </form>
     </div>

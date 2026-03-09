@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue'; 
 
+const counter =  ref(0);
 
 export const useTransactionStore = defineStore('transaction', () => {
     const transactions = ref([]);
@@ -14,16 +15,15 @@ export const useTransactionStore = defineStore('transaction', () => {
     const totalBalance = computed(() => {
         return transactions.value.reduce((acc, item) => acc + item.amount, 0);
     });
-    const balanceleft = computed(()=>{
-
-    })
 
     const updateTransaction = computed(()=>{
         transactions.value++;
-    })
-   
+    })   
+
 
     return {
+        counter,
+        increasingcounter,
         transactions,
         addTransaction,
         deleteTransaction,
