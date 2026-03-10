@@ -1,3 +1,11 @@
+<script setup>
+
+const {id} =  useRoute().params.id
+
+
+</script>
+
 <template>
-    <div>d</div>
-    </template>
+
+
+</template>
