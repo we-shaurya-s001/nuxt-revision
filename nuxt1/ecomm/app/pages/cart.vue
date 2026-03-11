@@ -1,4 +1,13 @@
 <script setup>
+
+useSeoMeta({
+  title: "My Nuxt Site cart q",
+  description: "Best Nuxt website example",
+  ogTitle: "My Nuxt Site",
+  ogDescription: "Best Nuxt website example",
+  ogImage: "/image.jpg",
+  twitterCard: "summary_large_image"
+})
 import { storeToRefs } from 'pinia';
 
 // Nuxt will automatically find useCartStore() if the file is in /stores
