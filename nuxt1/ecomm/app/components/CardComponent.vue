@@ -9,16 +9,25 @@
           class="h-full object-contain group-hover:scale-105 transition-transform duration-300" 
         />
       </div>
+      
+      <div class="">
 
-      <div class="text-[10px] uppercase tracking-widest text-gray-400 mb-1">
+      </div>
+
+
+      <div>
+      </div>
+
+
+       <div class="text-[10px] uppercase text-gray-400 mb-1">
         {{ product.category }}
       </div>
 
       <h3 class="text-sm font-semibold text-gray-800 line-clamp-2 mb-2 min-h-[40px]">
         {{ product.title }}
       </h3>
-
-      <div class="mt-auto flex justify-between items-end">
+  
+  <div class="mt-auto flex justify-between items-end">
         <div>
           <span class="text-xs text-gray-400 block italic">ID: {{ product.id }}</span>
           <span class="text-lg font-bold text-gray-900">${{ product.price }}</span>
@@ -34,7 +43,6 @@
 </template>
 
 <script setup>
-// Props for the individual product object and its index in the loop
 defineProps({
   product: {
     type: Object,
