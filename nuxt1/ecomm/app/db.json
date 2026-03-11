@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "mail": "rahul.sharma@example.com",
+      "address": "Delhi, India",
+      "phone": "+91-9876543210"
+    },
+    {
+      "id": 2,
+      "name": "Priya Verma",
+      "mail": "priya.verma@example.com",
+      "address": "Mumbai, India",
+      "phone": "+91-9123456780"
+    },
+    {
+      "id": 3,
+      "name": "Amit Singh",
+      "mail": "amit.singh@example.com",
+      "address": "Bangalore, India",
+      "phone": "+91-9988776655"
+    },
+    {
+      "id": 4,
+      "name": "Neha Gupta",
+      "mail": "neha.gupta@example.com",
+      "address": "Jaipur, India",
+      "phone": "+91-9090909090"
+    },
+    {
+      "id": 5,
+      "name": "Arjun Patel",
+      "mail": "arjun.patel@example.com",
+      "address": "Ahmedabad, India",
+      "phone": "+91-9871234567"
+    }
+  ]
+}

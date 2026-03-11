@@ -12,7 +12,6 @@
         <div class="h-24 bg-gray-200"></div>
       </div>
     </div>
-
     <div v-else-if="error || !product" class="text-center py-20">
       <h2 class="text-2xl font-bold">Product not found</h2>
       <p class="text-gray-500">The product you are looking for doesn't exist.</p>
@@ -41,8 +40,7 @@
           <span class="text-3xl font-bold text-gray-900">${{ product.price }}</span>
           <div v-if="product.rating" class="flex items-center gap-1 bg-yellow-100 px-2 py-1 rounded text-yellow-700 text-sm font-bold">
             ★ {{ product.rating.rate }} 
-            <span class="text-yellow-600 font-normal">({{ product.rating.count }} reviews)</span>
-          </div>
+1           </div>
         </div>
 
         <p class="mt-8 text-gray-600 leading-relaxed text-lg">
@@ -57,10 +55,10 @@
             ♥
           </button>
         </div>
-
+<div>
+  
+</div>
         <div class="mt-8 border-t border-gray-100 pt-8 grid grid-cols-2 gap-4">
-          <div class="text-sm text-gray-500">✓ Free shipping on orders over $50</div>
-          <div class="text-sm text-gray-500">✓ 30-day easy returns</div>
         </div>
       </div>
     </div>
@@ -68,22 +66,18 @@
 </template>
 
 <script setup>
-// 1. Get the ID from the URL parameters
 const route = useRoute()
 const productId = route.params.id
 
-// 2. Fetch the specific product data
-// Apply: Use a unique key for each product to ensure correct hydration/caching
 const { data: product, pending, error } = await useAsyncData(
   `product-detail-${productId}`,
   () => $fetch(`https://fakestoreapi.com/products/${productId}`),
   {
-    // Apply: 'pick' only the data we need to show on the page
     pick: ['title', 'price', 'description', 'category', 'image', 'rating']
   }
 )
 
-// 3. Dynamic SEO - Sets the tab title to the product name
+
 useHead({
   title: product.value ? `${product.value.title} | Nuxt Store` : 'Loading Product...'
 })
