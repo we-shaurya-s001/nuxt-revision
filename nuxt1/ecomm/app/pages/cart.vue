@@ -1,4 +1,9 @@
 <script setup>
+const nuxtApp = useNuxtApp()
+
+console.log(nuxtApp.$hello) 
+
+const vueApp = nuxtApp.vueApp
 
 useSeoMeta({
   title: "My Nuxt Site cart q",
@@ -8,9 +13,8 @@ useSeoMeta({
   ogImage: "/image.jpg",
   twitterCard: "summary_large_image"
 })
-import { storeToRefs } from 'pinia';
+import { storeToRefs } from 'pinia';                                                                                                                                                                                                                
 
-// Nuxt will automatically find useCartStore() if the file is in /stores
 const cartStore = useCartStore(); 
 const { cartItemCount, cartTotalPrice, items } = storeToRefs(cartStore);
 
