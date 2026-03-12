@@ -13,4 +13,4 @@ const { data, error } = await useAsyncData('posts', () =>
       Error loading data: {{ error.message }}
     </div>
   </div>
-</template>
+</template>     
