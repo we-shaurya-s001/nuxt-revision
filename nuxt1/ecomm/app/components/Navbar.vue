@@ -4,7 +4,7 @@
   <div class="color-red">Logo</div>
   <div class="flex gap-6">
     <NuxtLink to="/">Home</NuxtLink>
-    <NuxtLink to="/">Products</NuxtLink>
+    <NuxtLink to="/indexi">Products</NuxtLink>
   </div>
   <div class="mr-8">
         <NuxtLink to="/cart">   Cart🛒</NuxtLink>
