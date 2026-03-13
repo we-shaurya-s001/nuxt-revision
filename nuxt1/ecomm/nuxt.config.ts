@@ -16,3 +16,6 @@ export default defineNuxtConfig({
 },
 });
 
+
+
+// 1) Code splitting and enhanced communicanicatioon between comp
