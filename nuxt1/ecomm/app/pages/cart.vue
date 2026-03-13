@@ -16,7 +16,7 @@ useSeoMeta({
 import { storeToRefs } from 'pinia';                                                                                                                                                                                                                
 
 const cartStore = useCartStore(); 
-const { cartItemCount, cartTotalPrice, items } = storeToRefs(cartStore);
+const { cartTotalPrice, items } = storeToRefs(cartStore);
 
 const handleAddToCart = (product) => {
   cartStore.addProduct(product);

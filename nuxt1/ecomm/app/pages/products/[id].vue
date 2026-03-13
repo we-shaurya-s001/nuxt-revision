@@ -4,6 +4,11 @@
       <span>&larr;</span> Back to Products
     </NuxtLink>
 
+    <NuxtLink>
+    
+      <div>for the initial commits</div>
+    </NuxtLink>
+
     <div v-if="pending" class="flex flex-col md:flex-row gap-12 animate-pulse">
       <div class="w-full md:w-1/2 h-96 bg-gray-200 rounded-2xl"></div>
       <div class="flex-1 space-y-4">
@@ -14,6 +19,7 @@
     </div>
     <div v-else-if="error || !product" class="text-center py-20">
       <h2 class="text-2xl font-bold">Product not found</h2>
+      
       <p class="text-gray-500">The product you are looking for doesn't exist.</p>
       <NuxtLink to="/" class="mt-4 inline-block bg-black text-white px-6 py-2 rounded-lg">Go Home</NuxtLink>
     </div>

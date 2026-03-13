@@ -7,12 +7,13 @@ const updateState = (name: string) => {
 }
 </script>
 
+
 <template>
   <div>
     <h1>Safe Store (useState)</h1>
     <p>Current User: <strong>{{ state.user }}</strong></p>
     
     <button @click="updateState('User_Alpha')">Set to Alpha</button>
-    <button @click="updateState('User_Beta')">Set to Beta</button>
+    <button click="updateState('User_Beta')">Set to Beta</button>
   </div>
 </template>
